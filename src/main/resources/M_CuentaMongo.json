@@ -1,0 +1,22 @@
+[{
+  "_id": {
+    "$oid": "6560d716dc68f37e21a4cb8e"
+  },
+  "saldo_Global": "576.50",
+  "cliente": {
+    "_id": "1",
+    "nombre": "Alexander"
+  },
+  "_class": "EPA.Cuenta_Bancaria_Web.Modelo.Mongo.M_CuentaMongo"
+},
+{
+  "_id": {
+    "$oid": "6560d76edc68f37e21a4cb90"
+  },
+  "saldo_Global": "1500",
+  "cliente": {
+    "_id": "2",
+    "nombre": "Juan"
+  },
+  "_class": "EPA.Cuenta_Bancaria_Web.Modelo.Mongo.M_CuentaMongo"
+}]

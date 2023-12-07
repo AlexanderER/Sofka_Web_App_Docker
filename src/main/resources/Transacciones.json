@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "36ca9fe2-05a3-4d1c-9790-0bdda751afc8",
+		"name": "Transacciones",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8963854",
+		"_collection_link": "https://galactic-capsule-832621.postman.co/workspace/API_Cuenta_Bancaria~8cc019bf-6e29-4f7c-a552-af25635fc50f/collection/8963854-36ca9fe2-05a3-4d1c-9790-0bdda751afc8?action=share&source=collection_link&creator=8963854"
+	},
+	"item": [
+		{
+			"name": "listar_transacciones",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8086/Transacciones/listar_transacciones",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"Transacciones",
+						"listar_transacciones"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deposito Cajero",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8086/Transacciones/Crear/Deposito/Cajero/1/40.00",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"Transacciones",
+						"Crear",
+						"Deposito",
+						"Cajero",
+						"1",
+						"40.00"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deposito Sucursal",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8086/Transacciones/Crear/Deposito/Sucursal/1/40.00",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"Transacciones",
+						"Crear",
+						"Deposito",
+						"Sucursal",
+						"1",
+						"40.00"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deposito Otra Cuenta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8086/Transacciones/Crear/Deposito/OtraCuenta/1/40.00",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"Transacciones",
+						"Crear",
+						"Deposito",
+						"OtraCuenta",
+						"1",
+						"40.00"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

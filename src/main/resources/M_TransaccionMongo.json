@@ -1,0 +1,63 @@
+[{
+  "_id": {
+    "$oid": "6560d7acdc68f37e21a4cb91"
+  },
+  "monto_transaccion": "10.00",
+  "saldo_inicial": "500",
+  "saldo_final": "508.00",
+  "costo_transaccion": "2.0",
+  "tipo": "CAJERO",
+  "cuenta": {
+    "_id": {
+      "$oid": "6560d716dc68f37e21a4cb8e"
+    },
+    "saldo_Global": "508.00",
+    "cliente": {
+      "_id": "1",
+      "nombre": "Alexander"
+    }
+  },
+  "_class": "EPA.Cuenta_Bancaria_Web.Modelo.Mongo.M_TransaccionMongo"
+},
+{
+  "_id": {
+    "$oid": "6560d7c0dc68f37e21a4cb92"
+  },
+  "monto_transaccion": "40.00",
+  "saldo_inicial": "508.00",
+  "saldo_final": "548.00",
+  "costo_transaccion": "0.0",
+  "tipo": "SUCURSAL",
+  "cuenta": {
+    "_id": {
+      "$oid": "6560d716dc68f37e21a4cb8e"
+    },
+    "saldo_Global": "548.00",
+    "cliente": {
+      "_id": "1",
+      "nombre": "Alexander"
+    }
+  },
+  "_class": "EPA.Cuenta_Bancaria_Web.Modelo.Mongo.M_TransaccionMongo"
+},
+{
+  "_id": {
+    "$oid": "6560d7c6dc68f37e21a4cb93"
+  },
+  "monto_transaccion": "30.00",
+  "saldo_inicial": "548.00",
+  "saldo_final": "576.50",
+  "costo_transaccion": "1.5",
+  "tipo": "OTRA_CUENTA",
+  "cuenta": {
+    "_id": {
+      "$oid": "6560d716dc68f37e21a4cb8e"
+    },
+    "saldo_Global": "576.50",
+    "cliente": {
+      "_id": "1",
+      "nombre": "Alexander"
+    }
+  },
+  "_class": "EPA.Cuenta_Bancaria_Web.Modelo.Mongo.M_TransaccionMongo"
+}]

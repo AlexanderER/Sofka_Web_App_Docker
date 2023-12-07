@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "9f34a719-9545-4922-9ac6-0bcc4725f125",
+		"name": "Cuentas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8963854",
+		"_collection_link": "https://galactic-capsule-832621.postman.co/workspace/API_Cuenta_Bancaria~8cc019bf-6e29-4f7c-a552-af25635fc50f/collection/8963854-9f34a719-9545-4922-9ac6-0bcc4725f125?action=share&source=collection_link&creator=8963854"
+	},
+	"item": [
+		{
+			"name": "listar_Cuentas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8086/Cuentas/listar_cuentas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"Cuentas",
+						"listar_cuentas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crear_Cuenta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8086/Cuentas/Crear",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"Cuentas",
+						"Crear"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

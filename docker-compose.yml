@@ -1,0 +1,41 @@
+version: '3.9'
+
+services:
+
+  app_sofka:
+    #build: .
+    image: alexer1515/bankingapp
+    ports:
+      - '8086:8086'
+    links:
+      - mongo_sofka
+#      - rabbit_sofka
+    environment:
+      - mongo.uri=mongodb://mongo_sofka:27017
+#      - rabbit.uri=amqps://nagxxrix:RVD_Y_uYzdzdx8GP4l77-DkCcqXshlQY@cow.rmq2.cloudamqp.com/nagxxrix
+    depends_on:
+      - mongo_sofka
+#      - rabbit_sofka
+#    restart: on-failure
+
+  mongo_sofka:
+    image: mongo
+    ports:
+      - '27017:27017'
+    volumes:
+      - data_mongo_sofka:/data/db
+
+
+#  rabbit_sofka:
+#    image: rabbitmq:3-management
+#    ports:
+#      - '5672:5672'
+#      - '5673:15672'
+#    environment:
+#      - RABBITMQ_DEFAULT_USER=userRabbit
+#      - RABBITMQ_DEFAULT_PASS=passRabbit
+
+
+
+volumes:
+  data_mongo_sofka:
