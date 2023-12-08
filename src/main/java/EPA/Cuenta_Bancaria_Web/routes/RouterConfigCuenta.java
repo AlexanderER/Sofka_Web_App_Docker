@@ -35,7 +35,7 @@ public class RouterConfigCuenta
      */
 
     @Bean
-    public RouterFunction<ServerResponse> getAllRouter(useCaseCuentaGetAll useCase){
+    public RouterFunction<ServerResponse> getAllCuentaRouter(useCaseCuentaGetAll useCase){
         return route(GET("/Cuentas/routes/listar_cuentas"),
                 request -> ServerResponse.ok()
                         .contentType(MediaType.APPLICATION_JSON)
