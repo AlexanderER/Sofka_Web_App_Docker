@@ -31,7 +31,7 @@ public class RabbitMqPublisher {
 
     public void publishMessageLog(String object){
         sender
-                .send(Mono.just(new OutboundMessage(RabbitConfig.EXCHANGE_NAME_LOG,
+                .send(Mono.just(new OutboundMessage(RabbitConfig.EXCHANGE_NAME,
                         RabbitConfig.ROUTING_KEY_NAME_LOG, object.getBytes()))).subscribe();
     }
 

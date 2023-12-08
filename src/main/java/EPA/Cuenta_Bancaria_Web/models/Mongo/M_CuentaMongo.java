@@ -47,4 +47,5 @@ public class M_CuentaMongo
     public void setCliente(M_ClienteMongo cliente) {
         this.cliente = cliente;
     }
+
 }

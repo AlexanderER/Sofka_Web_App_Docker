@@ -54,7 +54,7 @@ public class RabbitConfig {
 
         // Defino los exchange
         var exchange    = new TopicExchange(EXCHANGE_NAME);
-        var exchangeLog = new TopicExchange(EXCHANGE_NAME_LOG); //  NUEVO
+        //var exchangeLog = new TopicExchange(EXCHANGE_NAME_LOG); //  NUEVO
 
         // Defino las Colas
         var queue      = new Queue(QUEUE_NAME, true, false, false);
@@ -64,7 +64,7 @@ public class RabbitConfig {
 
         // Inicializo en la conexion
         amqpAdmin.declareExchange(exchange);
-        amqpAdmin.declareExchange(exchangeLog); //  NUEVO
+        //amqpAdmin.declareExchange(exchangeLog); //  NUEVO
 
         amqpAdmin.declareQueue(queue);
         amqpAdmin.declareQueue(queue2);
@@ -74,7 +74,8 @@ public class RabbitConfig {
         amqpAdmin.declareBinding(BindingBuilder.bind(queue)     .to(exchange).with(ROUTING_KEY_NAME));
         amqpAdmin.declareBinding(BindingBuilder.bind(queue2)    .to(exchange).with(ROUTING_KEY_NAME));
         amqpAdmin.declareBinding(BindingBuilder.bind(queueError).to(exchange).with(ROUTING_KEY_NAME_ERROR)); //   NUEVO
-        amqpAdmin.declareBinding(BindingBuilder.bind(queueLog)  .to(exchangeLog).with(ROUTING_KEY_NAME_LOG)); //   NUEVO
+        //amqpAdmin.declareBinding(BindingBuilder.bind(queueLog)  .to(exchangeLog).with(ROUTING_KEY_NAME_LOG)); //   NUEVO
+        amqpAdmin.declareBinding(BindingBuilder.bind(queueLog)  .to(exchange).with(ROUTING_KEY_NAME_LOG)); //   NUEVO
 
         return amqpAdmin;
     }
