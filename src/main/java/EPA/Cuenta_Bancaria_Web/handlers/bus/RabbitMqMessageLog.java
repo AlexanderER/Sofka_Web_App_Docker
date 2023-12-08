@@ -18,12 +18,12 @@ public class RabbitMqMessageLog implements CommandLineRunner
     @Override
     public void run(String... args) throws Exception
     {
-        /*
+/*
         receiver.consumeAutoAck(RabbitConfig.QUEUE_NAME_LOG)
                 .map(message -> {
                     System.out.println(new String(message.getBody()));
                     return Mono.empty();
                 }).subscribe();
-         */
+ */
     }
 }
